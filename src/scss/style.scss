@@ -1,0 +1,177 @@
+body {
+  font-family: cursive;
+  background-image: $bg-html;
+  user-select: none;
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  width: 100%;
+}
+
+.start__menu {
+  margin: auto 0;
+  border-radius: 5px;
+  padding: 1em 1em;
+}
+
+.start_h1 {
+  transition: all 2s ease-out;
+  font-family: cursive;
+  font-weight: 600;
+  font-size: 4em;
+  color: $color-text;
+}
+
+
+.btn-start {
+  display: block;
+  background-color: $bg-color-start-btn;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  font-size: 2rem;
+  padding: 0.7em 0.3em;
+  border-radius: 1.4em;
+  font-family: cursive;
+  transition: 0.3s;
+
+}
+
+.btn-start:hover {
+  color: $color-red;
+  transition: margin-right 2s, color 0.4s;
+  font-weight: 900;
+  letter-spacing: 0.3em;
+}
+
+.btn-deck {
+  display: block;
+  background-color: $bg-color-start-btn;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  font-size: 1.5rem;
+  padding: 0.2em 0.2em;
+  border-radius: 1.4em;
+  font-family: cursive;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $color-darkgreen;
+    letter-spacing: 0.3em;
+    color: toma $color-tomato;
+    transition: 0.5s;
+  }
+}
+
+/************************************/
+.wrapper {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.game {
+  margin: auto auto;
+}
+
+.game__deck {
+  flex-shrink: 0;
+  padding: 3px 3px;
+  flex-direction: row;
+  border: 3px ridge $color-black;
+  border-radius: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 272px;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.item {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border: 1px ridge $color-black;
+  border-radius: 0.1em;
+  margin: 1px 1px;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  &:hover {
+    transition: 1s;
+    background-color: $color-lightslategray;
+    opacity: 70%;
+  }
+}
+
+.green {
+  background-color: $bg-color-start-btn;
+}
+
+.red {
+  background-color: $color-tomato;
+}
+
+.game__timer {
+  text-align: center;
+  white-space: pre-line;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+
+#results {
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  vertical-align: center;
+  font-size: 5.5em;
+  z-index: 1;
+  top: 40vh;
+  width: 100%;
+  right: 0;
+  height: 90px;
+  color: $color-tomato;
+  background: linear-gradient(0.25turn, rgba(44, 83, 100, 0.1), rgba(15, 32, 39, 0.7), rgba(32, 58, 67, 0.1));
+}
+
+.nonePointer {
+  pointer-events: none;
+}
+
+.game__retry {
+  margin-top: 1em;
+  margin-left: 6em;
+  padding: 0.5em 0.5em;
+  border-radius: 10px;
+  background-color: $bg-color-start-btn;
+  font-size: 1em;
+}
+
+.table {
+  display: none;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0.3em;
+  font-size: $tHeaders;
+}
+.tableTittle{
+  display: flex;
+  justify-content: center;
+  font-size:$tableTittle;
+}
+
