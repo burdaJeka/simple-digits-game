@@ -1,4 +1,13 @@
-
+.wrapper__body{
+  display: block;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
 body {
   font-family: 'Montserrat';
   min-height: 100%;
@@ -7,7 +16,6 @@ body {
   background-image: $bg-html;
   overflow: hidden;
 }
-
 .start {
   display: flex;
   justify-content: center;
@@ -45,7 +53,6 @@ body {
   border-radius: 1.4em;
   font-family: 'Montserrat';
   transition: 0.3s;
-
 }
 
 .btn-start:hover {
@@ -62,14 +69,13 @@ body {
   margin-right: auto;
   margin-top: 0.5em;
   font-size: 1.5rem;
-  padding: 0.2em 0.2em;
+  padding: 0.3em 0.4em;
   border-radius: 1.4em;
   font-family: 'Montserrat';
   transition: 0.3s;
 
   &:hover {
     background-color: $color-darkgreen;
-    letter-spacing: 0.3em;
     color: toma $color-tomato;
     transition: 0.5s;
   }
@@ -85,6 +91,7 @@ body {
 }
 
 .game {
+
   margin: auto auto;
 }
 
@@ -116,9 +123,9 @@ body {
   flex-shrink: 0;
 
   &:hover {
-    transition: 1s;
+    transition: 0.5s;
     background-color: $color-lightslategray;
-    opacity: 70%;
+    opacity: 60%;
   }
 }
 
