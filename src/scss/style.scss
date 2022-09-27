@@ -1,7 +1,11 @@
+
 body {
   font-family: 'Montserrat';
-  background-image: $bg-html;
+  min-height: 100%;
+  min-width: 100%;
   user-select: none;
+  background-image: $bg-html;
+  overflow: hidden;
 }
 
 .start {
@@ -23,7 +27,7 @@ body {
   align-self: center;
   align-content: center;
   transition: all 2s ease-out;
-  font-family: cursive;
+  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 3em;
   color: $color-text;
@@ -39,7 +43,7 @@ body {
   font-size: 2rem;
   padding: 0.7em 0.3em;
   border-radius: 1.4em;
-  font-family: cursive;
+  font-family: 'Montserrat';
   transition: 0.3s;
 
 }
@@ -60,7 +64,7 @@ body {
   font-size: 1.5rem;
   padding: 0.2em 0.2em;
   border-radius: 1.4em;
-  font-family: cursive;
+  font-family: 'Montserrat';
   transition: 0.3s;
 
   &:hover {
@@ -73,7 +77,7 @@ body {
 
 /************************************/
 .wrapper {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
@@ -177,4 +181,5 @@ body {
   justify-content: center;
   font-size:$tableTittle;
 }
+
 
