@@ -1,5 +1,5 @@
 body {
-  font-family: cursive;
+  font-family: 'Montserrat';
   background-image: $bg-html;
   user-select: none;
 }
@@ -19,10 +19,13 @@ body {
 }
 
 .start_h1 {
+  justify-content: center;
+  align-self: center;
+  align-content: center;
   transition: all 2s ease-out;
   font-family: cursive;
   font-weight: 600;
-  font-size: 4em;
+  font-size: 3em;
   color: $color-text;
 }
 
