@@ -120,7 +120,7 @@ function generateStyle() {
     let fontWeight = randomFontWeight();
     let fontSize = randomFontSize();
     let color = randomColor();
-    let style = `font-weight:${fontWeight}; font-size:${fontSize};color:${color};`;
+    let style = `font-weight:${fontWeight}; font-size:${fontSize};color:${color}`;
     console.log(style);
     return style;
 }
@@ -133,13 +133,7 @@ function randomFontWeight() {
 }
 
 function randomColor() {
-    const MAX_VALUE = 256;
-    let rgb;
-    let red = Math.floor(Math.random() * MAX_VALUE);
-    let green = Math.floor(Math.random() * MAX_VALUE);
-    let blue = Math.floor(Math.random() * MAX_VALUE);
-    rgb = `#${red.toString(16)}${green.toString(16)}${blue.toString(16)}`;
-    return rgb;
+    return `#${Math.floor(Math.random()*16777215).toString(16)}`;
 }
 
 function randomFontSize() {
