@@ -201,7 +201,7 @@ function generateResult() {
     document.querySelector(querySelector).appendChild(tdTime);
     document.querySelector(querySelector).appendChild(tdResult);
     document.querySelector(".time" + index).innerHTML =
-        resultArr[resultArr.length - 1].time;
+        `${resultArr[resultArr.length - 1].time} seconds`;
     document.querySelector(".result" + index).innerHTML =
         resultArr[resultArr.length - 1].result;
     if (resultArr.length >= 5) {
