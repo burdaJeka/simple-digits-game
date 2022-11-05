@@ -1,4 +1,4 @@
-If you want start this app with <b>webPack</b> , follow this insctructions :<br>
+If you want start this app with <b>webPack</b> , follow this instructions  :<br>
 Copy this repository from gitHub --> (first way) For example : <code>git clone https://github.com/burdaJeka/simpleDigitsGame.git</code><br>
 Start install dependencies! -->
 Input this command on terminal: <code>npm install</code><br>
